@@ -60,5 +60,5 @@
 #     # password: 'please use keys'
 #   }
 
-server '13.231.66.57', user: 'app', roles: %w{app db web}
+server '52.196.231.163', user: 'app', roles: %w{app db web}
 set :ssh_options, keys: '/Users/a-nagao/.ssh/id_rsa'

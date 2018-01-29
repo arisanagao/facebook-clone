@@ -1,16 +1,16 @@
 lock '3.6.0'
 
 # デプロイするアプリケーション名
-set :application, 'facebook-demo'
+set :application, 'facebook-clone'
 
 # cloneするgitのレポジトリ（xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
-set :repo_url, 'https://github.com/arisanagao/facebook'
+set :repo_url, 'https://github.com/arisanagao/facebook-clone'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
-set :branch, ENV['BRANCH'] || 'dive20_2'
+set :branch, ENV['BRANCH'] || 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/facebook-demo'
+set :deploy_to, '/var/www/facebook-clone'
 
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
