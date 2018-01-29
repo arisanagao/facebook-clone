@@ -31,7 +31,7 @@
       <br> 
       <div class="field">
         <%= f.label :プロフィール画像変更 %>
-        <p><%= profile_img(@user) if profile_img(@user) %></p>
+        <p class="edit_profile_img"><%= profile_img(@user) if profile_img(@user) %></p>
         <%= f.file_field :avatar %>
         <%= f.hidden_field :avatar_cache %>
       </div>
