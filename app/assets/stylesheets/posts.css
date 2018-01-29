@@ -1,0 +1,17 @@
+html { height: 100% }
+
+body {
+  background-color: #E6E6E6;
+  height: 100%;
+}
+
+ul.list-group {
+	font-size: medium;
+	text-align: right;
+}
+
+p.post {
+	text-align: left;
+	word-wrap: break-word;
+}
+/*# sourceMappingURL=tweets.css.map */

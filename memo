@@ -1,0 +1,20 @@
+・macでPostgreSQLを再起動
+$ brew services start postgresql
+
+・herokuの登録
+$ heroku git:remote --app APPNAME
+
+・Herokuにmasterブランチ以外をデプロイする
+$ git push heroku ブランチ名:master --force
+
+・styleseetsをHerokuに反映させる
+$ rake assets:precompile RAILS_ENV=production
+
+・Herokuのデータベースリセット、マイグレーション
+heroku pg:reset DATABASE
+heroku run rake db:migrate RAILS_ENV=production
+
+・Herokuに環境変数を登録する
+$ heroku config:add PUSHER_APP_ID=
+$ heroku config:add PUSHER_KEY=
+$ heroku config:add PUSHER_SECRET=

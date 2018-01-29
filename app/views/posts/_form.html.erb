@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<%= form_for(@post) do |f| %>
+
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @post.errors.count %>件のエラーがあります。</h2>
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+
+  <div class="col-sm-8 col-sm-offset-2">
+    <%= f.text_field :content, class: 'form-control' , :placeholder => "いまどうしてる?" %>
+    <br>
+    <div class="field">
+      <%= f.label :投稿画像を選択 %>
+      <%= f.file_field :picture %>
+    </div>
+    <br>
+    <%= f.submit '投稿', class: 'btn btn-primary btn-block' %>
+  </div>
+	
+<% end %>
