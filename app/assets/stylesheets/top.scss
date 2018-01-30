@@ -21,6 +21,7 @@ header ul a {
     color: white;
     margin-bottom: 0px;
 }
+
 .navbar-default {
   .navbar-brand {
     color: black;
@@ -43,6 +44,11 @@ header ul a {
     }
   }
 }
+
+.nav > li > a:hover { 
+  background-color: transparent; }
+
+
 @media (max-width: 767px) {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: black;
