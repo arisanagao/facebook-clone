@@ -3,17 +3,15 @@
 
   <% @users.each do |user| %>
       <div class="container-child col-md-2 col-sm-4 col-xs-6 ">
-        <p class="profile_img"><%= profile_img(user) %></p>
         <strong><%= user.name %></strong>
-
+        <p class="profile_img"><%= profile_img(user) %></p>
         <% if current_user != user %>
             <div class="item">
               <%= link_to 'メッセージ', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%>
             </div>
             <%= render 'follow_form', user: user %>
         <% end %>
-
+        <br><br>
       </div>
   <% end %>
-
 </div>
