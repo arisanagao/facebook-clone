@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+.nav > li > a:hover {
+  background-color: transparent; }
+
+.nav > li > a:focus {
+  background-color: transparent; }
