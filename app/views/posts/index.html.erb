@@ -7,13 +7,12 @@
 
         <ul class="list-group">
           <% @posts.reverse_each do |post| %>
-            <li class="list-group-item">
-              <p class="post">
+          <li class="list-group-item">
+            <p class="post">
               <strong><%= post.user.name %></strong>の投稿  <%= post.created_at.strftime("%F %R") %>
               <br>
               <%= post.content %>
-              </p>
-              <div align="center"><%= image_tag post.picture.url %></div>
+              <div class="post_image"><%= image_tag post.picture.url %></div>
               <br>
               <%= link_to "詳細", post_path(post.id), class: 'btn-sm btn-info' %>
               <% if current_user == post.user %>

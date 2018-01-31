@@ -14,4 +14,11 @@ p.post {
 	text-align: left;
 	word-wrap: break-word;
 }
-/*# sourceMappingURL=tweets.css.map */
+
+
+.post_image {
+  text-align: center;
+}
+.post_image img{
+  max-width: 100%;
+}
