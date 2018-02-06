@@ -18,3 +18,15 @@ heroku run rake db:migrate RAILS_ENV=production
 $ heroku config:add PUSHER_APP_ID=
 $ heroku config:add PUSHER_KEY=
 $ heroku config:add PUSHER_SECRET=
+
+unicorn再起動
+$ cap production unicorn:stop
+$ cap production unicorn:start
+
+postgres restart(aws)
+$ sudo  /etc/init.d/postgresql94 start
+
+
+Capistranoでデプロイ
+$ bundle exec cap production deploy
+$ bundle exec cap -T #調べるとき
